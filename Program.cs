@@ -9,7 +9,7 @@ namespace FirstCSProject
         static void Main(String[] args)
         {
             
-            // im going to adsfkhudfgaiuhodsafihlu
+            // im going to 
             Console.WriteLine(KeyboardReader.GetString("Say Something: "));
 
             Console.WriteLine(KeyboardReader.GetInt("Enter A Int Between 0 and 100", 0, 100));
