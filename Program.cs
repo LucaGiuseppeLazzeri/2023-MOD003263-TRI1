@@ -1,24 +1,24 @@
-﻿// See https://aka.ms/new-console-template for more information
-
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace FirstCSProject
+namespace Software_Engineering_Project_New
+
 {
-    class Launcher
+    internal static class Program
     {
-        static void Main(String[] args)
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            
-            // im going to hate in macs
-            Console.WriteLine(KeyboardReader.GetString("Say Something: "));
-
-            Console.WriteLine(KeyboardReader.GetInt("Enter A Int Between 0 and 100", 0, 100));
-
-            Console.WriteLine(KeyboardReader.GetChar("Enter One Of The Following Characters, a b c d e", "abcde"));
-
-            KeyboardReader.Pause();
-
-// test
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new HomePage());
         }
     }
+    
 }
